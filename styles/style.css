@@ -17,7 +17,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  white-space: nowrap;
   text-underline-offset: 3px;
 }
 .header__links-list-item_no-bullit {
@@ -47,6 +46,7 @@
 .cover {
   background-image: url(../images/cover.jpg);
   background-color: #ffff;
+  background-position: center;
   background-size: cover;
   position: relative;
   padding: 166px 50px 50px 50px;
@@ -95,8 +95,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  inset: 656px 50px 50px 50px;
-  height: 51px;
+  margin-top: 109px;
   width: 1000px;
   border-width: 1px;
   z-index: 1;
@@ -105,7 +104,6 @@
   text-transform: uppercase;
   word-spacing: 19px;
   color: #ffffff;
-  height: 28px;
   font-size: 22px;
   font-weight: 400;
   text-align: left;
@@ -125,7 +123,7 @@
   z-index: 1;
 }
 
-.overlay {
+.overlay__lots {
   background-color: black;
   opacity: 60%;
   inset: 0;
@@ -148,6 +146,7 @@
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
   padding: 0%;
   margin: 0%;
 }
@@ -161,7 +160,7 @@
   height: 100%;
 }
 .card {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   position: relative;
   height: 100%;
   display: flex;
@@ -232,16 +231,15 @@
 .about__title {
   margin-top: 136px;
   margin-bottom: 100px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
   width: 291px;
-  height: 47px;
   margin-top: 135px;
-  margin-bottom: 100px;
+  margin-bottom: 104px;
 }
 .about__logo {
   display: flex;
@@ -253,7 +251,7 @@
   height: 240px;
   background-color: black;
   border-radius: 50%;
-  margin-top: 33px;
+  margin-top: 32px;
   margin-left: 47px;
 }
 
@@ -261,24 +259,25 @@
   width: 148px;
 }
 .about__text {
-  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   line-height: 24px;
 }
-.paragraf {
-  padding-bottom: 24px;
-}
+
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
-  padding: 180px 50px 85px;
+  padding: 180px 50px 82px;
   font-size: 18px;
 }
 .footer__address {
   justify-self: start;
   font-style: normal;
   list-style: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
