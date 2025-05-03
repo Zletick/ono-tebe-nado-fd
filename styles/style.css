@@ -270,7 +270,10 @@
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
-  padding: 180px 50px 82px;
+  padding-top: 180px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0px;
   font-size: 18px;
 }
 .footer__address {
